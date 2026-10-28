@@ -16,9 +16,12 @@ set -euo pipefail
 
 NATIVE_HOST_NAME="com.cinaba.header_atelier"
 # Internal build and public build (no Control Center features) of Header
-# Atelier: one helper serves both, each pinned to its own ID by its manifest key.
+# Atelier: one helper serves both, each pinned to its own ID by its manifest key,
+# plus the public build from the Chrome Web Store.
 EXTENSION_ID="jckelahhlphngdmllbfjmeapdcailnii"
 PUBLIC_EXTENSION_ID="fmhlfkkokgidhamnfnejlinbjgpmgejh"
+# The public build installed from the Chrome Web Store, which assigns its own ID.
+STORE_EXTENSION_ID="aecomcdlbbnegglengjcflgdodncmljj"
 INSTALL_DIR="$HOME/Library/Application Support/header-atelier-helper"
 APP_SUPPORT="$HOME/Library/Application Support"
 # Name and folder used up to helper 1.4.x: an install over one of those moves
@@ -94,7 +97,7 @@ write_manifest() {
   "description": "Header Atelier helper (localhost proxy)",
   "path": "$INSTALL_DIR/native-host.py",
   "type": "stdio",
-  "allowed_origins": ["chrome-extension://$EXTENSION_ID/", "chrome-extension://$PUBLIC_EXTENSION_ID/"]
+  "allowed_origins": ["chrome-extension://$EXTENSION_ID/", "chrome-extension://$PUBLIC_EXTENSION_ID/", "chrome-extension://$STORE_EXTENSION_ID/"]
 }
 EOF
 }

@@ -23,7 +23,11 @@ import time
 NATIVE_HOST_NAME = "com.cinaba.header_atelier"
 # Internal build and public build (no Control Center features) of Header
 # Atelier: one helper serves both, each pinned to its own ID by its manifest key.
-EXTENSION_IDS = ("jckelahhlphngdmllbfjmeapdcailnii", "fmhlfkkokgidhamnfnejlinbjgpmgejh")
+EXTENSION_IDS = (
+    "jckelahhlphngdmllbfjmeapdcailnii",  # internal build
+    "fmhlfkkokgidhamnfnejlinbjgpmgejh",  # public build, loaded unpacked
+    "aecomcdlbbnegglengjcflgdodncmljj",  # public build from the Chrome Web Store
+)
 LOCAL_APPDATA = os.environ.get("LOCALAPPDATA", os.path.expanduser(r"~\AppData\Local"))
 INSTALL_DIR = os.path.join(LOCAL_APPDATA, "header-atelier-helper")
 # Name and folder used up to helper 1.4.x: an install over one of those moves

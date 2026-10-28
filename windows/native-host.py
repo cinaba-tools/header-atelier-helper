@@ -52,7 +52,7 @@ import sys
 import threading
 import time
 
-VERSION = "1.5.0"
+VERSION = "1.5.1"
 IS_WINDOWS = os.name == "nt"
 
 if IS_WINDOWS:

@@ -44,7 +44,7 @@ import sys
 import threading
 import time
 
-VERSION = "1.5.0"
+VERSION = "1.5.1"
 DIG = "/usr/bin/dig"
 
 # Per-user state (no privileges needed).

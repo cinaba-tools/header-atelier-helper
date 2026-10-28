@@ -7,9 +7,9 @@ production hostname to the **Akamai staging network**, or pin it to an IP,
 
 | | |
 |---|---|
-| Version | 1.5.0 (`VERSION` in each `native-host.py`) |
+| Version | 1.5.1 (`VERSION` in each `native-host.py`) |
 | Platforms | macOS (`macos/`), Windows 10/11 (`windows/`) |
-| Accepted extensions | `jckelahhlphngdmllbfjmeapdcailnii` (internal), `fmhlfkkokgidhamnfnejlinbjgpmgejh` (public) |
+| Accepted extensions | `jckelahhlphngdmllbfjmeapdcailnii` (internal), `fmhlfkkokgidhamnfnejlinbjgpmgejh` (public, unpacked), `aecomcdlbbnegglengjcflgdodncmljj` (public, [Chrome Web Store](https://chromewebstore.google.com/detail/header-atelier/aecomcdlbbnegglengjcflgdodncmljj)) |
 | Native host name | `com.cinaba.header_atelier` |
 | Repository | [cinaba-tools/header-atelier-helper](https://github.com/cinaba-tools/header-atelier-helper) |
 | Authors | Chiara Innocentin, Adriano Basile |
@@ -99,6 +99,7 @@ proxy left running by the old one), then restart the browser completely.
 Version **1.5.0** renamed the native host to `com.cinaba.header_atelier` and its folder to
 `header-atelier-helper`; its installer moves an older install across by itself. Update the
 extension first: 1.5.0 needs Header Atelier **1.13.0** or later (public build **1.12.0**).
+Version **1.5.1** also accepts the public build installed from the Chrome Web Store.
 
 ## Detailed Usage
 

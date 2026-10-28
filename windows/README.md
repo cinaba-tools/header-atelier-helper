@@ -90,6 +90,9 @@ network* section in the popup will be active.
 | `%LOCALAPPDATA%\header-atelier-helper\com.cinaba.header_atelier.json` | Native messaging manifest, restricted to the Header Atelier extension IDs (internal and public build) |
 | `HKCU\Software\<browser>\NativeMessagingHosts\com.cinaba.header_atelier` | Registers the manifest with the browser (per-user registry key) |
 
+Since **v1.5.1** the manifest also authorises the public build installed from the
+Chrome Web Store (`aecomcdlbbnegglengjcflgdodncmljj`).
+
 Since **v1.5.0** the host is registered as `com.cinaba.header_atelier` and lives in
 the `header-atelier-helper` folder (before: `top.abasiletools.tcportal.staging` and
 `tcportal-staging`). Installing 1.5.0 over an older helper moves its hostnames

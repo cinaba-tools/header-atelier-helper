@@ -75,6 +75,9 @@ Then quit Chrome completely (Cmd+Q) and reopen it.
 | `~/Library/Application Support/header-atelier-helper/native-host.py` | Native messaging host + localhost proxy (runs as your user) |
 | `<browser data root>/NativeMessagingHosts/com.cinaba.header_atelier.json` | Registers the host with the browser, restricted to the Header Atelier extension IDs (internal and public build) |
 
+Since **v1.5.1** the manifest also authorises the public build installed from the
+Chrome Web Store (`aecomcdlbbnegglengjcflgdodncmljj`).
+
 Since **v1.5.0** the host is registered as `com.cinaba.header_atelier` and lives in
 the `header-atelier-helper` folder (before: `top.abasiletools.tcportal.staging` and
 `tcportal-staging`). Installing 1.5.0 over an older helper moves its hostnames
