@@ -173,9 +173,10 @@ network tab (a hostname switched to staging, with the staging edge IP):
 
 ![Network tab with a hostname on staging](docs/network.png)
 
-## License
+## License and privacy
 
-[MIT](LICENSE).
+[MIT](LICENSE). Privacy policy of the extension and the helper: [PRIVACY.md](PRIVACY.md)
+(nothing is collected or sent anywhere).
 
 Header Atelier is a personal project. It is not an official Akamai product and is not
 supported or endorsed by Akamai Technologies.
