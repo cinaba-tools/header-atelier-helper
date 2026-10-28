@@ -89,23 +89,7 @@ features (`fmhlfkkokgidhamnfnejlinbjgpmgejh`). The same helper serves both.
 Since **v1.4.2** the manifest is written for **every Chromium browser present in your
 account**, not just Chrome: `Google/Chrome` (plus Beta and Canary), `Chromium`,
 `Vivaldi`, `BraveSoftware/Brave-Browser` and `Microsoft Edge`, each under
-`~/Library/Application Support/`. Browsers you do not have are skipped. Registering
-Chrome alone is what left other browsers falling back to a stale system-wide
-registration from the retired pre-1.2.0 helper, which fails with a misleading
-message about a missing sudo rule.
-
-### Leftovers from the retired pre-1.2.0 helper
-
-That build ran as root and spoofed `/etc/hosts`. Its files sit outside your home
-folder, so `./uninstall.sh` cannot remove them and its system-wide registration can
-still win in some browsers. `install.sh` now detects them and prints the cleanup
-commands; this is the only step that needs sudo:
-
-```
-sudo rm -f /Library/Google/Chrome/NativeMessagingHosts/top.abasiletools.tcportal.staging.json
-sudo rm -f /etc/sudoers.d/tcportal-staging
-sudo rm -rf /usr/local/libexec/tcportal-staging
-```
+`~/Library/Application Support/`. Browsers you do not have are skipped.
 
 Runtime state (which hostnames are staged, the proxy port, its PID and log)
 lives in `~/Library/Application Support/header-atelier-helper/`.
